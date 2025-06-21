@@ -8,7 +8,7 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f0f0f0;
+      background: #f5f5f5;
       color: #333;
     }
     .container {
@@ -19,19 +19,11 @@
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto 20px;
-    }
     h1 {
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
-    p {
+    p.tagline {
       text-align: center;
       margin-top: 0;
       font-style: italic;
@@ -42,4 +34,49 @@
     }
     .section h2 {
       color: #007acc;
-      border-bottom: 2px solid
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Abhishek Kumar Raj</h1>
+    <p class="tagline">Software Engineer | Data Enthusiast | Tech Explorer</p>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm a passionate software developer with experience in full-stack development, data engineering, and AI. I enjoy building scalable web applications and exploring new technologies.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages: Python, JavaScript, C++</li>
+        <li>Frameworks: React, FastAPI, Flask</li>
+        <li>Databases: PostgreSQL, MongoDB, SQLite</li>
+        <li>DevOps: Azure, Docker, GitHub Actions</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Email: abhishek@example.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    </div>
+  </div>
+</body>
+</html>
