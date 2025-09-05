@@ -1,82 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Profile</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-      color: #333;
-    }
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 5px;
-    }
-    p.tagline {
-      text-align: center;
-      margin-top: 0;
-      font-style: italic;
-      color: #666;
-    }
-    .section {
-      margin-top: 30px;
-    }
-    .section h2 {
-      color: #007acc;
-      border-bottom: 2px solid #007acc;
-      padding-bottom: 5px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar Raj - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>Abhishek Kumar Raj</h1>
-    <p class="tagline">Software Engineer | Data Enthusiast | Tech Explorer</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Abhishek Kumar Raj</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#sdlc" class="nav-link">SDLC</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <div class="section">
-      <h2>About Me</h2>
-      <p>
-        Hi! I'm a passionate software developer with experience in full-stack development, data engineering, and AI. I enjoy building scalable web applications and exploring new technologies.
-      </p>
-    </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Abhishek Kumar Raj</h1>
+                <p class="hero-subtitle">Senior Software Engineer & AI/ML Specialist</p>
+                <p class="hero-description">
+                    Accomplished Software Engineer with 2+ years of experience and a solid foundation in Data Science and Machine Learning from IIT Madras. Built intelligent bots, ML pipelines, and autonomous agents across diverse domains.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Contact Info</h3>
+                        <p><i class="fas fa-envelope"></i> abhishekkumarraj2057@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 8210434159</p>
+                        <p><i class="fab fa-linkedin"></i> abhishek-kumar-raj-903850190</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Languages: Python, JavaScript, C++</li>
-        <li>Frameworks: React, FastAPI, Flask</li>
-        <li>Databases: PostgreSQL, MongoDB, SQLite</li>
-        <li>DevOps: Azure, Docker, GitHub Actions</li>
-      </ul>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate Software Engineer with 2+ years of expertise in building intelligent solutions using AI/ML technologies. 
+                        My journey includes developing chatbots, ML pipelines, and autonomous agents across various domains including 
+                        sales, healthcare, and finance.
+                    </p>
+                    <p>
+                        I specialize in full-stack development using React, FastAPI, and Django, with rapid prototyping experience. 
+                        I leverage LLMs, GitHub Copilot, and cutting-edge AI development tools to accelerate workflows and enhance 
+                        engineering productivity.
+                    </p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <p class="skill-description">Proficient in multiple programming paradigms with expertise in building scalable applications</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag expert">Python</span>
+                            <span class="skill-tag advanced">JavaScript</span>
+                            <span class="skill-tag advanced">TypeScript</span>
+                            <span class="skill-tag intermediate">Java</span>
+                            <span class="skill-tag intermediate">C++</span>
+                            <span class="skill-tag expert">HTML/CSS</span>
+                            <span class="skill-tag intermediate">MATLAB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                        <p class="skill-description">Advanced expertise in AI/ML technologies with hands-on experience in production systems</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag expert">Machine Learning</span>
+                            <span class="skill-tag expert">Deep Learning</span>
+                            <span class="skill-tag advanced">Computer Vision</span>
+                            <span class="skill-tag expert">Large Language Models</span>
+                            <span class="skill-tag advanced">Neural Networks</span>
+                            <span class="skill-tag advanced">MLOps</span>
+                            <span class="skill-tag intermediate">TensorFlow</span>
+                            <span class="skill-tag intermediate">PyTorch</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> Full Stack Development</h3>
+                        <p class="skill-description">End-to-end development capabilities with modern frameworks and architectures</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag expert">React</span>
+                            <span class="skill-tag advanced">Angular</span>
+                            <span class="skill-tag intermediate">Vue.js</span>
+                            <span class="skill-tag expert">FastAPI</span>
+                            <span class="skill-tag intermediate">NestJS</span>
+                            <span class="skill-tag advanced">Django</span>
+                            <span class="skill-tag advanced">REST APIs</span>
+                            <span class="skill-tag intermediate">GraphQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cloud"></i> Cloud & Databases</h3>
+                        <p class="skill-description">Cloud-native development with expertise in scalable database solutions</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag expert">Microsoft Azure</span>
+                            <span class="skill-tag advanced">PostgreSQL</span>
+                            <span class="skill-tag expert">Snowflake</span>
+                            <span class="skill-tag advanced">Azure SQL</span>
+                            <span class="skill-tag intermediate">Google Cloud</span>
+                            <span class="skill-tag advanced">AWS</span>
+                            <span class="skill-tag intermediate">MongoDB</span>
+                            <span class="skill-tag advanced">Redis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> DevOps & Automation</h3>
+                        <p class="skill-description">DevOps practices with focus on automation, CI/CD, and infrastructure as code</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag expert">Git</span>
+                            <span class="skill-tag expert">GitHub Actions</span>
+                            <span class="skill-tag advanced">Docker</span>
+                            <span class="skill-tag advanced">Terraform</span>
+                            <span class="skill-tag intermediate">Kubernetes</span>
+                            <span class="skill-tag advanced">Azure DevOps</span>
+                            <span class="skill-tag intermediate">Ansible</span>
+                            <span class="skill-tag advanced">Selenium</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-line"></i> Data Science & Analytics</h3>
+                        <p class="skill-description">Data-driven decision making with advanced analytics and visualization capabilities</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag expert">Data Analysis</span>
+                            <span class="skill-tag advanced">Statistical Modeling</span>
+                            <span class="skill-tag advanced">Data Visualization</span>
+                            <span class="skill-tag intermediate">Pandas</span>
+                            <span class="skill-tag intermediate">NumPy</span>
+                            <span class="skill-tag advanced">Scikit-learn</span>
+                            <span class="skill-tag intermediate">Jupyter</span>
+                            <span class="skill-tag advanced">SQL Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-      <h2>Contact</h2>
-      <p>Email: abhishek@example.com</p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-    </div>
-  </div>
+    <!-- SDLC Lifecycle Section -->
+    <section id="sdlc" class="sdlc">
+        <div class="container">
+            <h2 class="section-title">Software Development Lifecycle Expertise</h2>
+            <p class="section-subtitle">Comprehensive understanding of SDLC phases with hands-on experience in each stage</p>
+            
+            <div class="sdlc-container">
+                <div class="sdlc-flow">
+                    <!-- Planning Phase -->
+                    <div class="sdlc-phase planning" data-phase="planning">
+                        <div class="phase-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Planning & Analysis</h3>
+                        <div class="phase-skills">
+                            <span class="skill-badge">Requirements Analysis</span>
+                            <span class="skill-badge">Project Planning</span>
+                            <span class="skill-badge">Risk Assessment</span>
+                            <span class="skill-badge">Stakeholder Communication</span>
+                        </div>
+                        <div class="phase-description">
+                            <p>Led requirement gathering sessions and created comprehensive project roadmaps for AI/ML solutions</p>
+                        </div>
+                    </div>
+
+                    <!-- Design Phase -->
+                    <div class="sdlc-phase design" data-phase="design">
+                        <div class="phase-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h3>System Design</h3>
+                        <div class="phase-skills">
+                            <span class="skill-badge">Architecture Design</span>
+                            <span class="skill-badge">Database Design</span>
+                            <span class="skill-badge">API Design</span>
+                            <span class="skill-badge">UI/UX Design</span>
+                        </div>
+                        <div class="phase-description">
+                            <p>Designed scalable microservices architectures and RESTful APIs for enterprise applications</p>
+                        </div>
+                    </div>
+
+                    <!-- Development Phase -->
+                    <div class="sdlc-phase development" data-phase="development">
+                        <div class="phase-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Development</h3>
+                        <div class="phase-skills">
+                            <span class="skill-badge">Full-Stack Development</span>
+                            <span class="skill-badge">AI/ML Implementation</span>
+                            <span class="skill-badge">API Development</span>
+                            <span class="skill-badge">Code Review</span>
+                        </div>
+                        <div class="phase-description">
+                            <p>Built intelligent applications using React, FastAPI, and advanced ML models with 90%+ accuracy</p>
+                        </div>
+                    </div>
+
+                    <!-- Testing Phase -->
+                    <div class="sdlc-phase testing" data-phase="testing">
+                        <div class="phase-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3>Testing & QA</h3>
+                        <div class="phase-skills">
+                            <span class="skill-badge">Unit Testing</span>
+                            <span class="skill-badge">Integration Testing</span>
+                            <span class="skill-badge">Automated Testing</span>
+                            <span class="skill-badge">Performance Testing</span>
+                        </div>
+                        <div class="phase-description">
+                            <p>Implemented comprehensive testing strategies including Selenium automation and ML model validation</p>
+                        </div>
+                    </div>
+
+                    <!-- Deployment Phase -->
+                    <div class="sdlc-phase deployment" data-phase="deployment">
+                        <div class="phase-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Deployment & DevOps</h3>
+                        <div class="phase-skills">
+                            <span class="skill-badge">CI/CD Pipelines</span>
+                            <span class="skill-badge">Containerization</span>
+                            <span class="skill-badge">Cloud Deployment</span>
+                            <span class="skill-badge">Infrastructure as Code</span>
+                        </div>
+                        <div class="phase-description">
+                            <p>Deployed applications using Docker, Kubernetes, and Azure DevOps with automated CI/CD pipelines</p>
+                        </div>
+                    </div>
+
+                    <!-- Maintenance Phase -->
+                    <div class="sdlc-phase maintenance" data-phase="maintenance">
+                        <div class="phase-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Maintenance & Monitoring</h3>
+                        <div class="phase-skills">
+                            <span class="skill-badge">Performance Monitoring</span>
+                            <span class="skill-badge">Bug Fixing</span>
+                            <span class="skill-badge">Feature Updates</span>
+                            <span class="skill-badge">ML Model Retraining</span>
+                        </div>
+                        <div class="phase-description">
+                            <p>Maintained production systems with automated monitoring and continuous model improvement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SDLC Flow Arrows -->
+                <div class="flow-arrows">
+                    <div class="arrow arrow-1"></div>
+                    <div class="arrow arrow-2"></div>
+                    <div class="arrow arrow-3"></div>
+                    <div class="arrow arrow-4"></div>
+                    <div class="arrow arrow-5"></div>
+                </div>
+
+                <!-- Skills Summary -->
+                <div class="sdlc-summary">
+                    <h3>Key Achievements Across SDLC</h3>
+                    <div class="achievement-grid">
+                        <div class="achievement-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>80% Efficiency Improvement</h4>
+                            <p>Reduced development time through automated processes</p>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>90% Accuracy Rate</h4>
+                            <p>Achieved high accuracy in ML model implementations</p>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-clock"></i>
+                            <h4>10 Minutes Deployment</h4>
+                            <p>Reduced deployment time from hours to minutes</p>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-users"></i>
+                            <h4>Cross-functional Teams</h4>
+                            <p>Led teams across different SDLC phases</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Software Engineer</h3>
+                            <span class="timeline-company">Technology Company</span>
+                            <span class="timeline-date">June 2023 – Present</span>
+                        </div>
+                        <div class="project-item">
+                            <h4>AI-Powered Legal Document Assistant</h4>
+                            <span class="project-period">July 2024 – Present</span>
+                            <p><strong>Problem:</strong> Legal teams lacked fast access to legal documents such as SOWs, MSAs, and NDAs.</p>
+                            <p><strong>Solution:</strong> Built a React + Python chatbot for contract Q&A and internal document navigation.</p>
+                            <p><strong>Tech Stack:</strong> Entity extraction, Neo4j, hybrid semantic-graph search</p>
+                            <p><strong>Impact:</strong> Enabled instant answers, reduced legal ops workload, and improved compliance visibility.</p>
+                        </div>
+                        <div class="project-item">
+                            <h4>Sales Intelligence Automation Platform</h4>
+                            <span class="project-period">September 2024 – April 2025</span>
+                            <p><strong>Problem:</strong> Sales teams needed a proactive solution to manage meeting notes, gain insights, and interact with tools like Bullhorn.</p>
+                            <p><strong>Solution:</strong> Built a proactive bot that summarizes daily meeting notes and provides feedback without user intervention.</p>
+                            <p><strong>Tech Stack:</strong> Microsoft Teams integration, Bullhorn API</p>
+                            <p><strong>Impact:</strong> Provided a single platform for sales teams to manage tasks, gain insights, and collaborate.</p>
+                        </div>
+                        <div class="project-item">
+                            <h4>Enterprise Intelligence Agent</h4>
+                            <span class="project-period">April 2024 – September 2024</span>
+                            <p><strong>Problem:</strong> Aggregating company insights from diverse sources was labor-intensive and time-consuming.</p>
+                            <p><strong>Solution:</strong> Created an intelligent agent using LangChain, LlamaIndex, and CrewAI to generate detailed company reports.</p>
+                            <p><strong>Tech Stack:</strong> LangChain, LlamaIndex, CrewAI</p>
+                            <p><strong>Impact:</strong> Improved reporting efficiency by 80%, reduced report generation time from 4 hours to 10 minutes.</p>
+                        </div>
+                        <div class="project-item">
+                            <h4>Natural Language to SQL Converter</h4>
+                            <span class="project-period">September 2023 – April 2024</span>
+                            <p><strong>Problem:</strong> Writing SQL queries manually was time-intensive and required technical expertise.</p>
+                            <p><strong>Solution:</strong> Built a tool using LLMs to translate natural language into SQL queries.</p>
+                            <p><strong>Tech Stack:</strong> Angular, FastAPI, Snowflake, PostgreSQL</p>
+                            <p><strong>Impact:</strong> Reduced query creation time by 80%, enabled non-technical users to retrieve data effortlessly.</p>
+                        </div>
+                        <div class="project-item">
+                            <h4>ML-Powered Text Classification System</h4>
+                            <span class="project-period">June 2023 – September 2023</span>
+                            <p><strong>Problem:</strong> Manual text classification was error-prone, lacked scalability, and was time-consuming.</p>
+                            <p><strong>Solution:</strong> Developed a machine learning-based binary classifier with custom dataset upload and MLOps pipeline.</p>
+                            <p><strong>Tech Stack:</strong> FastAPI, Snowflake, React</p>
+                            <p><strong>Impact:</strong> Achieved 90% accuracy, reduced manual effort, and improved classification consistency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Technology Development Intern</h3>
+                            <span class="timeline-company">Healthcare Technology Company</span>
+                            <span class="timeline-date">May 2022 – June 2022</span>
+                        </div>
+                        <p>Developed a Screen Scraper bot capable of automating around 0.1 million out of per 10 million claim forms processing that must be done manually after denial of claim forms.</p>
+                        <p>Classified different types of claim forms and processed CMS1500 and UB-37 claim forms with help of different OCR tools like Tesseract, EasyOCR, KerasOCR and extracted important field names.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Academic & Personal Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>MTech Thesis: Breast Cancer Metastases Detection</h3>
+                        <span class="project-date">July 2022 - June 2023</span>
+                    </div>
+                    <div class="project-content">
+                        <p><strong>Research Area:</strong> Breast Cancer Metastases Detection</p>
+                        <p><strong>Models Compared:</strong> Swin-UNET and UNET</p>
+                        <p><strong>Methodology:</strong> Leveraged Deep Learning and Image Analysis for precise cancer detection.</p>
+                        <p><strong>Impact:</strong> Aimed to reduce morbidity and mortality for millions of women worldwide through early and accurate detection.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Natural Language Processing</h3>
+                        <span class="project-date">May 2023</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Built a model to translate English to Gujarati using LSTM and Transformer models.</p>
+                        <p>Compared performance of LSTM and Transformer-based translation approaches.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Spam Classifier</h3>
+                        <span class="project-date">April 2023</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Developed a Classifier to predict whether a mail is spam or non-spam.</p>
+                        <p>Collected data, visualized, and processed text data to feature vectors with TfidfVectorizer.</p>
+                        <p><strong>Achievement:</strong> Final F1 Score of 0.91 on the Test Dataset.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Real-time Predictions of Rating on Yelp Dataset</h3>
+                        <span class="project-date">November 2022</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Built a multiclassification model and streamed test data stored on the GCS bucket into Kafka.</p>
+                        <p>Used Spark Streaming to read the data and make real-time predictions using our saved model.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Convolutional Neural Network</h3>
+                        <span class="project-date">October 2022</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Performed image classification using an MLFFNN with Deep CNN features.</p>
+                        <p>Used pretrained models GoogLeNet and VggNet, along with a custom-built CNN model.</p>
+                        <p><strong>Achievement:</strong> Final accuracy of 0.95 on the Test Dataset using the GoogLeNet model.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Loan Default Prediction</h3>
+                        <span class="project-date">September 2021</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Developed a classifier (LGBM, XGBoost) to predict loan default probability.</p>
+                        <p>Addressed class imbalance using Synthetic Minority Oversampling Technique (SMOTE).</p>
+                        <p><strong>Achievement:</strong> Final F1 Score of 0.58 on the test dataset.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>Inter Disciplinary Dual Degree in Data Science & Biological Science</h3>
+                        <span class="education-institution">Indian Institute of Technology Madras</span>
+                        <span class="education-period">2018 - 2023</span>
+                    </div>
+                    <div class="education-details">
+                        <p><strong>CGPA:</strong> 8.97/10</p>
+                        <p><strong>Thesis:</strong> Detection of breast cancer metastases using SWIN-UNET and UNET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="leadership">
+        <div class="container">
+            <h2 class="section-title">Positions of Responsibility</h2>
+            <div class="leadership-grid">
+                <div class="leadership-card">
+                    <div class="leadership-header">
+                        <h3><i class="fas fa-hockey-puck"></i> IIT Madras Institute Hockey Captain</h3>
+                        <span class="leadership-period">July 2021 – July 2023</span>
+                    </div>
+                    <ul>
+                        <li>Mobilized an institute hockey team from scratch after COVID, which now has 40+ contenders</li>
+                        <li>Organized Garibos tournament to boost the sport's image and received 100+ participation</li>
+                        <li>Introduced practice sessions for girls, laying the foundation for a women's hockey team</li>
+                    </ul>
+                </div>
+                <div class="leadership-card">
+                    <div class="leadership-header">
+                        <h3><i class="fas fa-users"></i> CORE, Super-coordinator, Coordinator</h3>
+                        <span class="leadership-period">July 2018 – July 2022</span>
+                    </div>
+                    <ul>
+                        <li>Successfully handled the media side of branding and engagement for various disasters like the Bihar and Assam floods and Non-profit organization Goonj, which was able to raise over 1 lakh</li>
+                        <li>Created media content for self-defense karate and fire safety workshops that saw a footfall of more than 100 people</li>
+                    </ul>
+                </div>
+                <div class="leadership-card">
+                    <div class="leadership-header">
+                        <h3><i class="fas fa-medal"></i> Member of NCC and Scout and Guide</h3>
+                        <span class="leadership-period">July 2018 – July 2022</span>
+                    </div>
+                    <ul>
+                        <li>Member of National Cadet Corps at 4(TN)AIRSQN(T)NCC</li>
+                        <li>Member of Scout and Guide from 2012–2015 and completed up to Tritiya Sopan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in discussing new opportunities, innovative projects, and collaborations in AI/ML and software development.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:abhishekkumarraj2057@gmail.com">abhishekkumarraj2057@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+918210434159">+91 8210434159</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://linkedin.com/in/abhishek-kumar-raj-903850190" target="_blank">LinkedIn Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Abhishek Kumar Raj. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="mailto:abhishekkumarraj2057@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+918210434159" class="social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/abhishek-kumar-raj-903850190" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
